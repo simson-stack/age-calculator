@@ -1,0 +1,112 @@
+:root{
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Manrope", serif;
+}
+body {
+    background-color: var(--Off-white);
+    margin-top: 80px;
+}
+.box {
+    margin: 0 auto;
+    padding: 30px;
+    width: 500px;
+    height: 500px;
+    background-color: var(--White);
+    border-radius: 4%;
+    border-bottom-right-radius: 27%;
+    position: relative;
+    max-width: 90%;
+}
+.arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 24%;
+    right: 10%; 
+}
+button {
+    border-radius: 50%;
+    position: absolute;
+    top: 24%;
+    right: 10%;    
+}
+.button-div {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+button:hover {
+    scale: 1.06;
+    cursor: pointer;
+    img {
+        background-color: var(--Purple);
+    }
+}
+.top {
+    display: flex;
+    border-bottom: 1px solid var(--Light-grey);
+    width: 90%;
+    height: 24%;
+}
+input[type='number'] {
+    appearance: none;
+    width: 90px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid var(--Light-grey);
+    border-radius: 4px;
+    font-weight: 900;
+}
+input[type='number']:focus {
+    outline: none;
+    border: 1px solid var(--Purple);
+    
+}
+label {
+    font-size: 12px;
+    padding-bottom: 4px;
+}
+.in {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    padding-top: 12px;
+}
+.error {
+    font-size: 12px;
+    margin-top: 5px;
+    color: red;
+    display: none;
+}
+.result {
+    display: flex;
+    font-style: italic;
+}
+.output {
+    font-size: 70px;
+    padding-right: 10px;
+    color: var(--Purple);
+    font-weight: 900;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+}
+
